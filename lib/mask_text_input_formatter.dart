@@ -119,7 +119,7 @@ class MaskTextInputFormatter implements TextInputFormatter {
     final int afterChangeStart = max(0, beforeSelectionStart - lengthRemoved);
     final int afterChangeEnd = max(0, afterChangeStart + lengthAdded);
 
-    final int beforeReplaceStart = max(0, beforeSelectionStart - lengthRemoved);
+    final int beforeReplaceStart = max(0, beforeSelectionStart);
     final int beforeReplaceLength = beforeSelectionLength + lengthRemoved;
 
     final int beforeResultTextLength = _resultTextArray.length;
